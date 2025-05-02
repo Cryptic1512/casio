@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Казино-Майнер Вирус 777</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: red;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .fake-miner {
+            margin-top: 40px;
+            font-size: 1.5em;
+        }
+        .btn {
+            background-color: red;
+            color: white;
+            padding: 15px 30px;
+            margin: 20px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+        }
+        .final-message {
+            display: none;
+            margin-top: 50px;
+            font-size: 2em;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>КАЗИНО-МАЙНЕР ВИРУС 777</h1>
+    <p class="fake-miner">Идёт запуск скрытого майнинга... CPU: 99%</p>
+    <button class="btn" onclick="showMessage()">Установить вирус</button>
+    <button class="btn" onclick="showMessage()">Играть в казино</button>
+
+    <div class="final-message" id="finalMessage">
+        <p>ТЫ ПОПАЛСЯ! Это розыгрыш от твоего друга!</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.querySelector('.fake-miner').innerText = "Ваш процессор перегружен! Запущен майнер!";
+            document.getElementById('finalMessage').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
